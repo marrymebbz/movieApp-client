@@ -8,12 +8,12 @@ export default function Home() {
         <>
             <Row
                 className="text-white py-5 text-center main-banner d-flex justify-content-center align-items-center mx-auto"
-                style={{ backgroundImage: 'url(/images/homepage_bg.jpg)', backgroundBlendMode: 'multiply' }}
+                style={{ backgroundImage: 'url(/images/cinema_bg.jpg)', backgroundBlendMode: 'multiply' }}
             >
                 <Col className="container">  
                     <p className="text-uppercase fw-bold mb-2 text-warning">Best MOVIE App</p>
-                    <h1 className="fs-2">Welcome to ReelJourney, your guide to amazing stories and unforgettable movies.</h1>
-                    <p className="fs-4">Discover new favorites or revisit classics with ReelJourney by your side.</p>
+                    <h1 className="fs-2 mb-0">Welcome to ReelJourney, your guide to amazing stories and unforgettable movies.</h1>
+                    <p className="fs-4 mb-3">Discover new favorites or revisit classics with ReelJourney by your side.</p>
                     <Link 
                         to="/movies" 
                         className="m-0 py-2 px-5 w-100 border fw-semibold text-decoration-none rounded text-black text-uppercase bg-warning bg-gradient border-0"
@@ -23,7 +23,7 @@ export default function Home() {
             </Row>
             <Row className="py-5 text-center mx-auto d-flex justify-content-center align-items-center container">
                 <Col>  
-                    <h2 className="text-uppercase fw-bold text-warning">--- About our App ---</h2>
+                    <h2 className="text-uppercase fw-bold text-primary">--- About our App ---</h2>
                     <p>At ReelJourney, we bring your movie passion to life with personalized recommendations, curated playlists, and exclusive insights. From planning your next movie night to exploring timeless classics, ReelJourney is your all-in-one platform to stay entertained and inspired. Start your cinematic journey today and immerse yourself in the magic of storytelling!</p>
                 </Col>
             </Row>

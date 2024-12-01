@@ -27,7 +27,7 @@ export default function AdminView({ moviesData, fetchData }) {
 
     return (
         <>
-            <h1 className="text-center my-4">Admin Dashboard</h1>
+            <h1 className="text-center mt-4 mb-2">Admin Dashboard</h1>
             <Table striped bordered hover responsive>
                 <thead>
                     <tr className="text-center bg-info">

@@ -10,21 +10,21 @@ export default function AppNavbar() {
     const { user } = useContext(AuthContext);  // Access user from context
 
     return (
-        <Navbar expand="lg" className="navbar bg-warning bg-gradient text-black fw-semibold">
+        <Navbar expand="lg" className="navbar bg-primary bg-gradient text-black fw-semibold">
             <Container>
-                <Navbar.Brand as={NavLink} to="/" className="fw-semibold">ReelJourney: Your Path to Cinematic Adventures</Navbar.Brand>
+                <Navbar.Brand as={NavLink} to="/" className="fw-semibold text-white">ReelJourney: Your Path to Cinematic Adventures</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto navbar">
-                        <Nav.Link as={NavLink} to="/">Home</Nav.Link>
+                        <Nav.Link as={NavLink} to="/" className="text-white">Home</Nav.Link>
+                            <Nav.Link as={NavLink} to="/movies" className="text-white">Movies</Nav.Link>
                         { user ? (
                             <>
-                                <Nav.Link as={NavLink} to="/movies">Movies</Nav.Link>
                                 <LogoutButton />
                             </>
                         ) : (
                             <>
-                                <Nav.Link as={NavLink} to="/login" className="bg-primary bg-gradient text-white fw-bold rounded px-4 me-2">Login</Nav.Link>
+                                <Nav.Link as={NavLink} to="/login" className="bg-info bg-gradient text-white fw-bold rounded px-4 me-2">Login</Nav.Link>
                                 <Nav.Link as={NavLink} to="/register" className="bg-primary bg-gradient text-white fw-bold bg-danger bg-gradient rounded px-4">Register</Nav.Link>
                             </>
                         )}

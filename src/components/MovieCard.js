@@ -7,12 +7,12 @@ export default function MovieCard({ movieProp }) {
 
   return (
     <Card className="h-100">
-      <Card.Body>
-        <Card.Title>{title}</Card.Title>
-        <Card.Text><strong>Director:</strong> {director}</Card.Text>
-        <Card.Text><strong>Year:</strong> {year}</Card.Text>
-        <Card.Text><strong>Description:</strong> {description}</Card.Text>
-        <Card.Text><strong>Genre:</strong> {genre}</Card.Text>
+      <Card.Body className="border border-primary">
+        <Card.Title className="text-primary">{title}</Card.Title>
+        <Card.Text className="mb-0"><strong>Director:</strong> {director}</Card.Text>
+        <Card.Text className="mb-0"><strong>Year:</strong> {year}</Card.Text>
+        <Card.Text className="mb-0"><strong>Description:</strong> {description}</Card.Text>
+        <Card.Text className="mb-0"><strong>Genre:</strong> {genre}</Card.Text>
       </Card.Body>
     </Card>
   );
