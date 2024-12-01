@@ -6,6 +6,10 @@ import { Notyf } from 'notyf';
 
 import { AuthContext } from '../context/AuthContext';
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4d3fa02957dab91a0267f09b0d78d42a124ba86d
 export default function Login() {
 
     const notyf = new Notyf();
