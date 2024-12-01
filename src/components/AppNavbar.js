@@ -12,11 +12,7 @@ export default function AppNavbar() {
     return (
         <Navbar expand="lg" className="navbar bg-warning bg-gradient text-black fw-semibold">
             <Container>
-<<<<<<< HEAD
                 <Navbar.Brand as={NavLink} to="/" className="fw-semibold">ReelJourney: Your Path to Cinematic Adventures</Navbar.Brand>
-=======
-                <Navbar.Brand as={NavLink} to="/" className="fw-semibold">FitTrack: Your Personal Fitness Journey</Navbar.Brand>
->>>>>>> 4d3fa02957dab91a0267f09b0d78d42a124ba86d
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto navbar">
